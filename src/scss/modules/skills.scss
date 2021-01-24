@@ -1,7 +1,19 @@
 .skills {
   background-color: $blue;
   color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 3em;
   &__header {
     margin: 0px;
+    position: absolute;
+    top: 10px;
+    text-align: center;
+  }
+  &-section {
+    min-width: 288;
   }
 }
