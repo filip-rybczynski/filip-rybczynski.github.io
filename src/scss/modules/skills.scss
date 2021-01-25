@@ -6,14 +6,62 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 3em;
+  padding: 176px 4px 24px;
   &__header {
     margin: 0px;
     position: absolute;
-    top: 10px;
+    top: 64px;
+
+    font-size: 36px;
+    line-height: 1.33em;
     text-align: center;
+    
+    font-weight: bold;
   }
   &-section {
     min-width: 288;
+    margin: 0px 12px 64px;
+    &__icon {
+      font-size: 64px;
+      line-height: 1.12em;
+    }
+    &__header {
+      margin: 16px 0px 24px;
+      font-size: 24px;
+      line-height: 1.83em;
+
+      font-weight: bold;
+    }
+  }
+  &-list {
+    width: 288px;
+    padding: 0px;
+    margin: 0px;
+    
+    font-size: 16px;
+    line-height: 1.5em;
+
+    font-weight: 600px;
+    color: $blue-light;
+
+    list-style-position: inside;
+    
+    &--work {
+      list-style-image: url('/src/assets/img/small-tick-green.svg');
+    }
+    
+    &--something {
+      list-style-image: url('/src/assets/img/small-tick-light.svg');
+    }
+
+    &--learn {
+      &:marker {
+        color: $blue-light;
+      }
+    }
+
+    &__item {
+      text-align: left;
+    }    
   }
 }
