@@ -3,7 +3,6 @@
   color: $white;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   position: relative;
   padding: 176px 4px 24px;
@@ -15,53 +14,83 @@
     font-size: 36px;
     line-height: 1.33em;
     text-align: center;
-    
+
     font-weight: bold;
   }
-  &-section {
-    min-width: 288;
-    margin: 0px 12px 64px;
-    &__icon {
-      font-size: 64px;
-      line-height: 1.12em;
-    }
-    &__header {
-      margin: 16px 0px 24px;
-      font-size: 24px;
-      line-height: 1.83em;
+}
 
-      font-weight: bold;
+.skills-section {
+  min-width: 288;
+  margin: 0px 12px 64px;
+  &__icon {
+    font-size: 64px;
+    line-height: 1.12em;
+  }
+  &__header {
+    margin: 16px 0px 24px;
+    font-size: 24px;
+    line-height: 1.83em;
+
+    font-weight: bold;
+  }
+}
+
+.skills-list {
+  width: 288px;
+  padding: 0px;
+  margin: 0px;
+
+  font-size: 16px;
+  line-height: 1.5em;
+
+  font-weight: 600px;
+  color: $blue-light;
+
+  list-style-position: inside;
+
+  &--work {
+    list-style-image: url("/src/assets/img/small-tick-green.svg");
+    & > li::before {
+      //space between marker and text
+      content: "";
+      width: 5px;
+      display: inline-block;
     }
   }
-  &-list {
-    width: 288px;
-    padding: 0px;
-    margin: 0px;
-    
-    font-size: 16px;
-    line-height: 1.5em;
 
-    font-weight: 600px;
-    color: $blue-light;
-
-    list-style-position: inside;
-    
-    &--work {
-      list-style-image: url('/src/assets/img/small-tick-green.svg');
+  &--something {
+    list-style-image: url("/src/assets/img/small-tick-light.svg");
+    & > li::before {
+      //space between marker and text
+      content: "";
+      width: 5px;
+      display: inline-block;
     }
-    
-    &--something {
-      list-style-image: url('/src/assets/img/small-tick-light.svg');
-    }
+  }
 
-    &--learn {
-      &:marker {
-        color: $blue-light;
+  &--learn {
+    list-style-type: none;
+    & > li {
+      padding-left: 24px;
+      position: relative;
+      &:before {
+        content: "";
+        width: 2px;
+        height: 2px;
+        background: $blue-lightest;
+        border-radius: 50%;
+        position: absolute;
+        left: 5px;
+        top: 10px;
       }
     }
+  }
 
-    &__item {
-      text-align: left;
-    }    
+  &__item {
+    text-align: left;
+    margin: 0px 0px 16px;
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
   }
 }
