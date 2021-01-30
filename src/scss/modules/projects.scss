@@ -19,6 +19,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
   }
 }
 
@@ -26,14 +27,21 @@
   width: 288px;
   height: 320px;
   border-radius: 16px;
+
   background: $console-grey2;
   filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
   overflow: hidden;
 
   color: $console-grey4;
   font-family: "Roboto Mono", sans-serif;
+  font-size: 13px;
+  line-height: 1.85em;
 
   position: relative;
+
+  & a {
+    color:$text-link;
+  }
 
   &__bar {
     height: 40px;
@@ -71,6 +79,45 @@
     }
   }
 
+  &__content {
+    padding: 24px 16px;
+    text-align: left;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 102px 1fr;
+    column-gap: 4px;
+  }
+
+  &__label {
+    text-align: right;
+  }
+
   &__name {
+    margin: 24px 0px 8px;
+
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    & span:last-child {
+      color: $white;
+      font-weight: bold;
+    }
+  }
+
+  &__description {
+    margin: 0px 0px 24px;
+    & span:last-child {
+      color: $console-grey5;
+    }
+  }
+
+  &__demo {
+    margin: 0px 0px 8px;
+  }
+
+  &__github {
+    margin: 0px;
   }
 }
