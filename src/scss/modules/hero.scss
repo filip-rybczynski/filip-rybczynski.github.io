@@ -1,5 +1,3 @@
-
-
 .hero {
   padding: 98px 0px 88px;
 
@@ -54,15 +52,15 @@
     }
   }
 
-  // &__wave {
-  //   display: inline-block;
-  //   &:hover {
-  //     transform: rotate(30deg);
-  //     transition: transform 0.2s ease-in;
+  &__pop {
+    animation: pop 1s ease-in-out;
+  }
 
-  //     background: pink;
-  //   }
-  // }
+  &__wave {
+    display: inline-block;
+animation: wave 0.5s ease-in-out 0.25s;
+
+  }
 
   &__text-container {
     width: 288px;

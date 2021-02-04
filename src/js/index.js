@@ -39,3 +39,18 @@ fetch('https://api.github.com/users/filip-rybczynski/repos?sort=created&directio
 .catch(error => {
   console.log(error);
 })
+
+const portrait = document.querySelector(".portrait--js");
+const welcome = document.querySelector(".welcome--js");
+const waveEmoji = document.querySelector(".wave--js");
+
+
+portrait.addEventListener("mouseover", () => {
+waveEmoji.classList.add("hero__wave");
+welcome.classList.add("hero__pop");
+});
+
+portrait.addEventListener("mouseout", () => {
+  waveEmoji.classList.remove("hero__wave");
+  welcome.classList.remove("hero__pop");
+  });

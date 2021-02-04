@@ -20,9 +20,35 @@ $text-dark: #234361;
 $breakpoint: 960px;
 
 
+@keyframes wave {
 
+    17% {
+      transform: rotate(30deg);
+      transform-origin: bottom right;
+    }
+    50% {
+      transform: rotate(-30deg);
+      transform-origin: bottom right;
+    }
+    83% {
+      transform: rotate(30deg);
+      transform-origin: bottom right;
+    }
+    100% {
+      transform: rotate(0deg);
+      transform-origin: bottom right;
+    }
+  }
 
+@keyframes pop {
+    25%, 75% {
+        transform: scale(1.1);
+    }
 
+    100% {
+        transform: scale(1);
+    }
+}
 
 
 
