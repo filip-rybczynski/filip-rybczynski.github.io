@@ -1,25 +1,92 @@
+
+
 .hero {
   padding: 98px 0px 88px;
 
-  &__portrait-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   &__portrait {
     box-sizing: content-box;
     width: 96px;
     margin-bottom: 24px;
     border-radius: 50%;
     border: solid 16px $blue-lightest;
+
+    @media screen and (min-width: $breakpoint) {
+      width: 178px;
+      border-width: 24px;
+      margin-bottom: 48px;
+
+      &-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 226px;
+        margin: 0px auto;
+      }
+    }
   }
+
   &__welcome {
     display: none;
+    @media screen and (min-width: $breakpoint) {
+      display: inline-block;
+      position: absolute;
+      top: -26px;
+      left: 202px;
+      width: 244px;
+      height: 72px;
+      padding: 16px 19px;
+      border-radius: 16px;
+
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 1.25em;
+
+      background: $blue;
+      color: $white;
+
+      &:before {
+        content: url("/src/assets/img/speech-cloud.svg");
+        position: absolute;
+        top: 60px;
+        left: 32px;
+      }
+    }
   }
+
+  // &__wave {
+  //   display: inline-block;
+  //   &:hover {
+  //     transform: rotate(30deg);
+  //     transition: transform 0.2s ease-in;
+
+  //     background: pink;
+  //   }
+  // }
 
   &__text-container {
     width: 288px;
     margin: 0px auto 48px;
+
+    @media screen and (min-width: $breakpoint) {
+      width: 830px;
+      margin: 0px auto 68px;
+      position: relative;
+
+      &:before {
+        content: url("/src/assets/img/left-bracket.svg");
+        position: absolute;
+        left: -63px;
+        top: 0px;
+      }
+
+      &:after {
+        content: url("/src/assets/img/right-bracket.svg");
+        position: absolute;
+        right: -63px;
+        top: 0px;
+      }
+    }
   }
 
   &__header {
@@ -31,6 +98,10 @@
     &-emphasis {
       color: $blue;
     }
+    @media screen and (min-width: $breakpoint) {
+      font-size: 32px;
+      line-height: 1.25em;
+    }
   }
   &__introduction {
     margin-bottom: 0px;
@@ -41,6 +112,12 @@
       font-weight: bold;
       text-decoration: none;
       color: $text-link;
+    }
+    @media screen and (min-width: $breakpoint) {
+      font-size: 20px;
+      &-link {
+        text-decoration: underline;
+      }
     }
   }
   &__mail {
@@ -60,5 +137,9 @@
     font-size: 20px;
     line-height: 2em;
     text-decoration: none;
+  }
+
+  @media screen and (min-width: $breakpoint) {
+    padding: 130px 0px 176px;
   }
 }

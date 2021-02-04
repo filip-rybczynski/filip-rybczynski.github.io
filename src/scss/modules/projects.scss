@@ -8,7 +8,7 @@
     text-align: center;
     margin: 0px 12px 32px;
 
-    @media screen and (min-width: 960px) {
+    @media screen and (min-width: $breakpoint) {
       font-weight: bold;
       font-size: 48px;
       line-height: 1.17em;
@@ -21,7 +21,7 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 2em;
-    @media screen and (min-width: 960px) {
+    @media screen and (min-width: $breakpoint) {
       width: 782px;
       font-size: 20px;
       margin: 0px auto 104px;
@@ -33,7 +33,7 @@
     flex-wrap: wrap;
     justify-content: center;
     // align-items: flex-start;
-    @media screen and (min-width: 960px) {
+    @media screen and (min-width: $breakpoint) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 24px;
@@ -41,7 +41,7 @@
       }
   }
 
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: $breakpoint) {
     padding: 80px 116px 176px;
     }
 
@@ -108,7 +108,7 @@
     padding: 24px 16px;
     text-align: left;
 
-    @media screen and (min-width: 960px) {
+    @media screen and (min-width: $breakpoint) {
     padding: 18px 48px 58px;
     }
 
@@ -118,7 +118,7 @@
     display: grid;
     grid-template-columns: 102px 1fr;
     column-gap: 4px;
-    @media screen and (min-width: 960px) {
+    @media screen and (min-width: $breakpoint) {
       grid-template-columns: 116px 1fr;
     }
   }
@@ -155,7 +155,7 @@
     margin: 0px;
   }
 
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: $breakpoint) {
     width: 100%;
     min-height: 324px;
     margin: 0px;
