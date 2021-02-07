@@ -1,6 +1,10 @@
 .contact {
   background: $blue-light;
   padding: 64px 16px 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &__header {
     text-align: center;
@@ -50,7 +54,7 @@
     padding: 0px;
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 
     &__link {
