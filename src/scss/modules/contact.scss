@@ -15,6 +15,13 @@
     color: $text-dark;
 
     margin: 0px 0px 32px;
+
+    @media screen and (min-width: $breakpoint) {
+      font-size: 48px;
+      line-height: 1.17em;
+      margin: 0px 0px 40px;
+    }
+
   }
 
   &__description {
@@ -23,10 +30,21 @@
     line-height: 32px;
     text-align: center;
     margin: 0px 0px 56px;
+
+    @media screen and (min-width: $breakpoint) {
+      font-size: 20px;
+      line-height: 2em;
+      margin: 0px 0px 128px;
+    }
   }
 
   &__links {
-
+    @media screen and (min-width: $breakpoint) {
+width: 580px;
+      display: flex;
+justify-content: space-between;
+align-items: center;
+    }
   }
 
   &__mail {
@@ -46,6 +64,13 @@
     font-size: 20px;
     line-height: 2em;
     text-decoration: none;
+    @media screen and (min-width: $breakpoint) {
+      margin: 0px;
+          }
+  }
+
+  @media screen and (min-width: $breakpoint) {
+    padding: 80px 0px 176px;
   }
 }
 
@@ -67,4 +92,9 @@
       align-items: center;
       justify-content: center;
     }
+
+    @media screen and (min-width: $breakpoint) {
+      width: 192px;
+      margin: 0px;
+          }
 }
