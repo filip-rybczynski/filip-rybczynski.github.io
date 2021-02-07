@@ -1,5 +1,6 @@
 .hero {
   padding: 98px 0px 88px;
+  position: relative;
 
   &__portrait {
     box-sizing: content-box;
@@ -58,7 +59,7 @@
 
   &__wave {
     display: inline-block;
-animation: wave 0.5s ease-in-out 0.25s;
+  animation: wave 0.5s ease-in-out 0.25s;
 
   }
 
@@ -95,6 +96,7 @@ animation: wave 0.5s ease-in-out 0.25s;
     line-height: 1.23em;
     &-emphasis {
       color: $blue;
+      white-space: nowrap;
     }
     @media screen and (min-width: $breakpoint) {
       font-size: 32px;
@@ -110,6 +112,7 @@ animation: wave 0.5s ease-in-out 0.25s;
       font-weight: bold;
       text-decoration: none;
       color: $text-link;
+      white-space: nowrap;
     }
     @media screen and (min-width: $breakpoint) {
       font-size: 20px;
@@ -138,6 +141,7 @@ animation: wave 0.5s ease-in-out 0.25s;
   }
 
   @media screen and (min-width: $breakpoint) {
-    padding: 130px 0px 176px;
+    padding: 130px 0px 124px;
   }
+
 }

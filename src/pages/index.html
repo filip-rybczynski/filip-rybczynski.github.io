@@ -15,35 +15,37 @@
     />
     <meta property="og:url" content="https://filip-rybczynski.github.io" />
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <!-- <meta
+    <meta
       property="og:image"
       content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    /> -->
+    />
   </head>
   <body>
-    <section class="hero">
+    <section class="hero" id="top">
       <div class="hero__portrait-container">
-      <img
-        class="hero__portrait portrait--js"
-        src="../assets/img/portrait.jpg"
-        alt="Photo of Filip Rybczyński"
-      />
-      <span class="hero__welcome welcome--js">Hey there! <span class="wave--js">👋</span></span>
-    </div>
+        <img
+          class="hero__portrait portrait--js"
+          src="../assets/img/portrait.jpg"
+          alt="Photo of Filip Rybczyński"
+        />
+        <span class="hero__welcome welcome--js"
+          >Hey there! <span class="wave--js">👋</span></span
+        >
+      </div>
       <div class="hero__text-container">
         <h1 class="hero__header">
           My name is Filip and I'm&nbsp;an aspiring
-          <strong class="hero__header-emphasis">Frontend&nbsp;developer</strong>
+          <strong class="hero__header-emphasis">Frontend developer</strong>
         </h1>
         <p class="hero__introduction">
           You might be interested in checking the list of
-          <a class="hero__introduction-link" href="#skills">my&nbsp;skills</a>.
+          <a class="hero__introduction-link" href="#skills">my skills</a>.
           Don’t forget to take a look at
           <a class="hero__introduction-link" href="#projects"
-            >my&nbsp;projects</a
+            >my projects</a
           >. Currently I’m looking for a new challenges so if you have one -
           <a class="hero__introduction-link" href="#contact"
-            >contact&nbsp;me!
+            >contact me!
           </a>
         </p>
       </div>
@@ -51,49 +53,50 @@
         >filipryba@gmail.com</a
       >
     </section>
+    <a class="top-link" href="#top">Back to top</a>
     <section class="skills" id="skills">
       <h2 class="skills__header">My skills</h2>
       <div class="skills__container">
-      <section class="skills-section">
-        <span class="skills-section__icon">💪</span>
-        <h3 class="skills-section__header">Working knowledge</h3>
-        <ul class="skills-list skills-list--work">
-          <li class="skills-list__item">Semantic HTML5</li>
-          <li class="skills-list__item">Flexbox</li>
-          <li class="skills-list__item">CSS grid</li>
-          <li class="skills-list__item">Markdown</li>
-          <li class="skills-list__item">JS: Local storage</li>
-          <li class="skills-list__item">Forms</li>
-          <li class="skills-list__item">SASS</li>
-        </ul>
-      </section>
-      <section class="skills-section">
-        <span class="skills-section__icon">🤔</span>
-        <h3 class="skills-section__header">Know something about</h3>
-        <ul class="skills-list skills-list--something">
-          <li class="skills-list__item">JavaScript ES6 + features</li>
-          <li class="skills-list__item">CSS animations</li>
-          <li class="skills-list__item">Working with API</li>
-          <li class="skills-list__item">NPM Scripts</li>
-          <li class="skills-list__item">Progressive web apps</li>
-          <li class="skills-list__item">Git</li>
-          <li class="skills-list__item">Accessibility</li>
-        </ul>
-      </section>
-      <section class="skills-section">
-        <span class="skills-section__icon">🎓</span>
-        <h3 class="skills-section__header">Want to learn</h3>
-        <ul class="skills-list skills-list--learn">
-          <li class="skills-list__item">React JS</li>
-          <li class="skills-list__item">Node JS</li>
-          <li class="skills-list__item">Typescript</li>
-          <li class="skills-list__item">Electron</li>
-          <li class="skills-list__item">Server side rendering</li>
-          <li class="skills-list__item">Gatsby</li>
-          <li class="skills-list__item">Websockets</li>
-        </ul>
-      </section>
-    </div>
+        <section class="skills-section">
+          <span class="skills-section__icon">💪</span>
+          <h3 class="skills-section__header">Working knowledge</h3>
+          <ul class="skills-list skills-list--work">
+            <li class="skills-list__item">Semantic HTML5</li>
+            <li class="skills-list__item">Flexbox</li>
+            <li class="skills-list__item">CSS grid</li>
+            <li class="skills-list__item">Markdown</li>
+            <li class="skills-list__item">JS: Local storage</li>
+            <li class="skills-list__item">Forms</li>
+            <li class="skills-list__item">SASS</li>
+          </ul>
+        </section>
+        <section class="skills-section">
+          <span class="skills-section__icon">🤔</span>
+          <h3 class="skills-section__header">Know something about</h3>
+          <ul class="skills-list skills-list--something">
+            <li class="skills-list__item">JavaScript ES6 + features</li>
+            <li class="skills-list__item">CSS animations</li>
+            <li class="skills-list__item">Working with API</li>
+            <li class="skills-list__item">NPM Scripts</li>
+            <li class="skills-list__item">Progressive web apps</li>
+            <li class="skills-list__item">Git</li>
+            <li class="skills-list__item">Accessibility</li>
+          </ul>
+        </section>
+        <section class="skills-section">
+          <span class="skills-section__icon">🎓</span>
+          <h3 class="skills-section__header">Want to learn</h3>
+          <ul class="skills-list skills-list--learn">
+            <li class="skills-list__item">React JS</li>
+            <li class="skills-list__item">Node JS</li>
+            <li class="skills-list__item">Typescript</li>
+            <li class="skills-list__item">Electron</li>
+            <li class="skills-list__item">Server side rendering</li>
+            <li class="skills-list__item">Gatsby</li>
+            <li class="skills-list__item">Websockets</li>
+          </ul>
+        </section>
+      </div>
     </section>
     <section class="projects" id="projects">
       <h2 class="projects__header">Recent projects</h2>
@@ -111,7 +114,11 @@
       <div class="contact__links">
         <ul class="socials">
           <li class="socials__item">
-            <a class="socials__link" href="https://github.com/filip-rybczynski"
+            <a
+              class="socials__link"
+              href="https://github.com/filip-rybczynski"
+              target="_blank"
+              rel="noopener noreferrer"
               ><img
                 class="socials__icon"
                 src="../assets/img/github-icon.svg"
@@ -119,7 +126,23 @@
             /></a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="https://twitter.com/FilipRybczynski"
+            <a
+              class="socials__link"
+              href="https://www.linkedin.com/in/filip-rybczy%C5%84ski/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                class="socials__icon"
+                src="../assets/img/linkedin-icon.svg"
+                alt="Filip Rybczyński LinkedIn"
+            /></a>
+          </li>
+          <li class="socials__item">
+            <a
+              class="socials__link"
+              href="https://twitter.com/FilipRybczynski"
+              target="_blank"
+              rel="noopener noreferrer"
               ><img
                 class="socials__icon"
                 src="../assets/img/twitter-icon.svg"
