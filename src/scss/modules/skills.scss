@@ -1,37 +1,36 @@
 .skills {
   background-color: $blue;
   color: $white;
- 
+
   padding: 64px 4px 24px;
   &__header {
-    margin: 0px 0px 64px;;
-
+    margin: 0px 0px 64px;
 
     font-size: 36px;
     line-height: 1.33em;
     text-align: center;
 
     font-weight: bold;
-    @media screen and (min-width: $breakpoint){
+    @media screen and (min-width: $breakpoint) {
       font-size: 48px;
       line-height: 1.17em;
+      margin: 0px 0px 128px;
     }
-  }
-
-  @media screen and (min-width: $breakpoint){
-
   }
 
   &__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    position: relative;
+  }
+
+  @media screen and (min-width: $breakpoint) {
+    padding: 80px 0px 112px;
   }
 }
 
 .skills-section {
-  min-width: 288;
+  min-width: 288px;
   margin: 0px 12px 64px;
   &__icon {
     font-size: 64px;
@@ -43,6 +42,14 @@
     line-height: 1.83em;
 
     font-weight: bold;
+  }
+
+  @media screen and (min-width: $breakpoint) {
+    width: 378px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -103,5 +110,9 @@
     &:last-of-type {
       margin-bottom: 0px;
     }
+  }
+
+  @media screen and (min-width: $breakpoint) {
+    width: 226px;
   }
 }
