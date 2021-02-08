@@ -71,7 +71,7 @@
   list-style-position: inside;
 
   &--work {
-    list-style-image: url("/src/assets/img/small-tick-green.svg");
+    list-style-image: url("../assets/img/small-tick-green.svg");
     & > li::before {
       //space between marker and text
       content: "";
@@ -81,7 +81,7 @@
   }
 
   &--something {
-    list-style-image: url("/src/assets/img/small-tick-light.svg");
+    list-style-image: url("../assets/img/small-tick-light.svg");
     & > li::before {
       //space between marker and text
       content: "";
