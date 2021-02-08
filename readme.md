@@ -1,12 +1,16 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://filip-rybczynski.github.io/img/og.png)
 
-# WTF Webpack Starter Kit 
+# Filip Rybczyński - portfolio 
 
-Simple toolkit for your static websites development.
+Frontend developer portfolio of Filip Rybczyński
 
-## How to use it?
+## Tools used
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+- HTML
+- CSS/SASS
+- JavaScript
+- Github pages
+- [WTF Webpack Starter Kit] (https://github.com/maciejkorsan/wtf-webpack-starter)
 
 ## Available scripts
 
