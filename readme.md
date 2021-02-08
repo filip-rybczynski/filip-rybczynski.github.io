@@ -10,7 +10,7 @@ Frontend developer portfolio of Filip Rybczyński
 - CSS/SASS
 - JavaScript
 - Github pages
-- [WTF Webpack Starter Kit] (https://github.com/maciejkorsan/wtf-webpack-starter)
+- [WTF Webpack Starter Kit](https://github.com/maciejkorsan/wtf-webpack-starter)
 
 ## Available scripts
 
