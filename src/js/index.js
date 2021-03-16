@@ -1,6 +1,8 @@
 import "../scss/main.scss";
 import githubIcon from "../assets/img/github-icon-white.svg";
 
+console.log("Hello! Welcome to my webpage. Hover the mouse over my photo for a wave 😁");
+
 fetch(
   "https://api.github.com/users/filip-rybczynski/repos?sort=created&direction=asc"
 )
