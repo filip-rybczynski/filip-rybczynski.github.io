@@ -1,0 +1,148 @@
+@import "./../../variables";
+
+.hero {
+  padding: 98px 0px 88px;
+
+  &__portrait {
+    box-sizing: content-box;
+    width: 96px;
+    margin-bottom: 24px;
+    border-radius: 50%;
+    border: solid 16px $blue-lightest;
+
+    @media screen and (min-width: $breakpoint) {
+      width: 178px;
+      border-width: 24px;
+      margin-bottom: 48px;
+
+      &-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 226px;
+        margin: 0px auto;
+      }
+    }
+  }
+
+  &__welcome {
+    display: none;
+    @media screen and (min-width: $breakpoint) {
+      display: inline-block;
+      position: absolute;
+      top: -26px;
+      left: 202px;
+      width: 244px;
+      height: 72px;
+      padding: 16px 19px;
+      border-radius: 16px;
+
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 1.25em;
+
+      background: $blue;
+      color: $white;
+
+      &:before {
+        content: url("../../assets/img/speech-cloud.svg");
+        position: absolute;
+        top: 64px;
+        left: 32px;
+      }
+    }
+  }
+
+  &__pop {
+    animation: pop 1s ease-in-out;
+  }
+
+  &__wave {
+    display: inline-block;
+  animation: wave 0.5s ease-in-out 0.25s;
+
+  }
+
+  &__text-container {
+    width: 288px;
+    margin: 0px auto 48px;
+
+    @media screen and (min-width: $breakpoint) {
+      width: 830px;
+      margin: 0px auto 68px;
+      position: relative;
+
+      &:before {
+        content: url("../../assets/img/left-bracket.svg");
+        position: absolute;
+        left: -63px;
+        top: 0px;
+      }
+
+      &:after {
+        content: url("../../assets/img/right-bracket.svg");
+        position: absolute;
+        right: -63px;
+        top: 0px;
+      }
+    }
+  }
+
+  &__header {
+    margin: 0px;
+    color: $text-dark;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.23em;
+    &-emphasis {
+      color: $blue;
+      white-space: nowrap;
+    }
+    @media screen and (min-width: $breakpoint) {
+      font-size: 32px;
+      line-height: 1.25em;
+    }
+  }
+  &__introduction {
+    margin-bottom: 0px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 2em;
+    &-link {
+      font-weight: bold;
+      text-decoration: none;
+      color: $text-link;
+      white-space: nowrap;
+    }
+    @media screen and (min-width: $breakpoint) {
+      font-size: 20px;
+      &-link {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 48px;
+    width: 278px;
+    border-radius: 24px;
+    margin: auto;
+
+    background-color: $text-link;
+    color: $white;
+
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2em;
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: $breakpoint) {
+    padding: 130px 0px 124px;
+  }
+
+}

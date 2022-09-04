@@ -1,0 +1,41 @@
+@import "./_normalize.scss";
+
+@import "./_variables";
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&family=Roboto+Mono&display=swap");
+
+html {
+  box-sizing:border-box;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: $white;
+  color: $text-default;
+  min-height: 100vh;
+    text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.top-link {
+  display: none;
+  @media screen and (min-width: $breakpoint) {
+    display: inline-block;
+    width: 50px;
+    height: 36px;
+    margin: 0px 16px 16px 0px;
+    position: sticky;
+    top: calc(100vh - 52px);
+    left: 100%;
+    
+    font-weight: bold;
+    text-decoration: none;
+    color: $text-link;
+  }
+}

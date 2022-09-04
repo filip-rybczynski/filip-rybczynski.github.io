@@ -1,0 +1,102 @@
+@import "./../../variables";
+
+.contact {
+  background: $blue-light;
+  padding: 64px 16px 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__header {
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.33em;
+    color: $text-dark;
+
+    margin: 0px 0px 32px;
+
+    @media screen and (min-width: $breakpoint) {
+      font-size: 48px;
+      line-height: 1.17em;
+      margin: 0px 0px 40px;
+    }
+
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    margin: 0px 0px 56px;
+
+    @media screen and (min-width: $breakpoint) {
+      font-size: 20px;
+      line-height: 2em;
+      margin: 0px 0px 128px;
+    }
+  }
+
+  &__links {
+    @media screen and (min-width: $breakpoint) {
+width: 580px;
+      display: flex;
+justify-content: space-between;
+align-items: center;
+    }
+  }
+
+  &__mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 48px;
+    width: 278px;
+    border-radius: 24px;
+    margin: auto;
+
+    background-color: $text-link;
+    color: $white;
+
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 2em;
+    text-decoration: none;
+    @media screen and (min-width: $breakpoint) {
+      margin: 0px;
+          }
+  }
+
+  @media screen and (min-width: $breakpoint) {
+    padding: 80px 0px 176px;
+  }
+}
+
+.socials {
+    margin: 0px 0px 64px;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__link {
+      
+      background: $white;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: $breakpoint) {
+      width: 192px;
+      margin: 0px;
+          }
+}
