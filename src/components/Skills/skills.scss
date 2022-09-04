@@ -1,0 +1,124 @@
+@import "./../../variables";
+
+.skills {
+  background-color: $blue;
+  color: $white;
+
+  padding: 64px 4px 24px;
+  &__header {
+    margin: 0px 0px 64px;
+
+    font-size: 36px;
+    line-height: 1.33em;
+    text-align: center;
+
+    font-weight: bold;
+    @media screen and (min-width: $breakpoint) {
+      font-size: 48px;
+      line-height: 1.17em;
+      margin: 0px 0px 128px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+      @media screen and (min-width: $breakpoint) {
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  }
+
+  @media screen and (min-width: $breakpoint) {
+    padding: 80px 0px 176px;
+  }
+}
+
+.skills-section {
+  min-width: 288px;
+  margin: 0px 12px 64px;
+  &__icon {
+    font-size: 64px;
+    line-height: 1.12em;
+  }
+  &__header {
+    margin: 16px 0px 24px;
+    font-size: 24px;
+    line-height: 1.83em;
+
+    font-weight: bold;
+  }
+
+  @media screen and (min-width: $breakpoint) {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.skills-list {
+  width: 288px;
+  padding: 0px;
+  margin: 0px;
+
+  font-size: 16px;
+  line-height: 1.5em;
+
+  font-weight: 600px;
+  color: $blue-light;
+
+  list-style-position: inside;
+
+  &--work {
+    list-style-image: url("../../assets/img/small-tick-green.svg");
+    & > li::before {
+      //space between marker and text
+      content: "";
+      width: 5px;
+      display: inline-block;
+    }
+  }
+
+  &--something {
+    list-style-image: url("../../assets/img/small-tick-light.svg");
+    & > li::before {
+      //space between marker and text
+      content: "";
+      width: 5px;
+      display: inline-block;
+    }
+  }
+
+  &--learn {
+    list-style-type: none;
+    & > li {
+      padding-left: 24px;
+      position: relative;
+      &:before {
+        content: "";
+        width: 2px;
+        height: 2px;
+        background: $blue-lightest;
+        border-radius: 50%;
+        position: absolute;
+        left: 5px;
+        top: 10px;
+      }
+    }
+  }
+
+  &__item {
+    text-align: left;
+    margin: 0px 0px 16px;
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint) {
+    width: 226px;
+  }
+}
