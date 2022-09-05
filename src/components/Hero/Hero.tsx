@@ -1,18 +1,32 @@
-import React from "react";
+// React
+import React, {FunctionComponent} from "react";
 
+// Interfaces and types
+import { HeroProps } from "./interface";
+
+// Styles
 import "./hero.scss";
 
+// Assets
 import portrait from "./../../assets/img/portrait.jpg";
 
-function Hero() {
+const Hero:FunctionComponent<HeroProps> = ({
+  givenName,
+  familyName,
+  email,
+  portraitUrl,
+  role,
+  isAspiring = false,
+}: HeroProps) => {
+
   return (
     <>
       <section className="hero" id="top">
         <div className="hero__portrait-container">
           <img
             className="hero__portrait portrait--js"
-            src={portrait}
-            alt="Photo of Filip Rybczyński"
+            src={portraitUrl || portrait}
+            alt={`Photo of ${givenName} ${familyName}`}
           />
           <span className="hero__welcome welcome--js">
             Hey there! <span className="wave--js">👋</span>
@@ -20,10 +34,9 @@ function Hero() {
         </div>
         <div className="hero__text-container">
           <h1 className="hero__header">
-            My name is Filip and I'm&nbsp;an aspiring{" "}
-            <strong className="hero__header-emphasis">
-              Frontend developer
-            </strong>
+            My name is {givenName} and I'm&nbsp;
+            {isAspiring ? "an aspiring" : "a"}{" "}
+            <strong className="hero__header-emphasis">{role}</strong>
           </h1>
           <p className="hero__introduction">
             You might be interested in checking the list of{" "}
@@ -40,8 +53,8 @@ function Hero() {
             </a>
           </p>
         </div>
-        <a className="hero__mail" href="mailto:filipryba@gmail.com">
-          filipryba@gmail.com
+        <a className="hero__mail" href={"mailto:" + email}>
+          {email}
         </a>
       </section>
       <a className="top-link" href="#top">
@@ -49,6 +62,6 @@ function Hero() {
       </a>
     </>
   );
-}
+};
 
 export default Hero;

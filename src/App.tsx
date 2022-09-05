@@ -1,18 +1,21 @@
+// React
 import React from 'react';
-<<<<<<< HEAD
 
-=======
-import './App.css';
->>>>>>> 82d8cd8b28b36bb1b5b0732e5e300bafe5c1d72e
+// Components
 import Contact from './components/Contact/Contact';
 import Hero from './components/Hero/Hero';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 
+// Data
+import developerInfo from './data/developerInfo';
+
 function App() {
+  const { repository, socials, ...heroProps} = developerInfo
+
   return (
     <>
-    <Hero />
+    <Hero {...heroProps} />
     <Skills />
     <Projects />
     <Contact />
