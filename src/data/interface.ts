@@ -12,5 +12,4 @@ export interface PersonalInfo {
     portraitUrl?: string,
     socials?: Array<Socials>,
     role: string,
-    isAspiring?: boolean,
 }

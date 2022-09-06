@@ -16,7 +16,6 @@ const developerInfo: PersonalInfo = {
         }
     ],
     role: "Frontend developer",
-    isAspiring: true,
 }
 
 export default developerInfo;

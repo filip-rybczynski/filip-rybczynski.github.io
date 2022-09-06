@@ -1,5 +1,5 @@
 // React
-import React, {FunctionComponent} from "react";
+import React, { useState } from "react";
 
 // Interfaces and types
 import { HeroProps } from "./interface";
@@ -10,32 +10,50 @@ import "./hero.scss";
 // Assets
 import portrait from "./../../assets/img/portrait.jpg";
 
-const Hero:FunctionComponent<HeroProps> = ({
+const Hero = ({
   givenName,
   familyName,
   email,
-  portraitUrl,
   role,
-  isAspiring = false,
+  portraitUrl,
 }: HeroProps) => {
+  const [animateGreeting, setAnimateGreeting] = useState<boolean>(false);
+
+  const portraitAlt: string = `Photo of ${givenName} ${familyName}`;
+
+  // Welcome message and classes that animate it
+  const messageClass: string =
+    "hero__welcome" + (animateGreeting ? " hero__pop" : "");
+  const waveClass: string = animateGreeting ? "hero__wave" : "";
+
+  const welcomeMessage: JSX.Element = (
+    <span className={messageClass}>
+      Hey there! <span className={waveClass}>👋</span>
+    </span>
+  );
 
   return (
     <>
       <section className="hero" id="top">
-        <div className="hero__portrait-container">
+        <div
+          className="hero__portrait-container"
+          onMouseEnter={(): void => {
+            setAnimateGreeting(true);
+          }}
+          onMouseLeave={(): void => {
+            setAnimateGreeting(false);
+          }}
+        >
           <img
             className="hero__portrait portrait--js"
             src={portraitUrl || portrait}
-            alt={`Photo of ${givenName} ${familyName}`}
+            alt={portraitAlt}
           />
-          <span className="hero__welcome welcome--js">
-            Hey there! <span className="wave--js">👋</span>
-          </span>
+          {welcomeMessage}
         </div>
         <div className="hero__text-container">
           <h1 className="hero__header">
-            My name is {givenName} and I'm&nbsp;
-            {isAspiring ? "an aspiring" : "a"}{" "}
+            My name is {givenName} and I'm&nbsp;a{" "}
             <strong className="hero__header-emphasis">{role}</strong>
           </h1>
           <p className="hero__introduction">
