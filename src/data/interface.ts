@@ -13,3 +13,15 @@ export interface PersonalInfo {
     socials?: Array<Socials>,
     role: string,
 }
+
+export type SkillCategory = {
+    headerEmoji: string,
+    headerText: string,
+    skills: string[],
+} 
+
+export interface SkillSet {
+    work: SkillCategory,
+    something: SkillCategory,
+    learn: SkillCategory
+}

@@ -24,6 +24,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
       @media screen and (min-width: $breakpoint) {
     display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -56,69 +57,5 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-}
-
-.skills-list {
-  width: 288px;
-  padding: 0px;
-  margin: 0px;
-
-  font-size: 16px;
-  line-height: 1.5em;
-
-  font-weight: 600px;
-  color: $blue-light;
-
-  list-style-position: inside;
-
-  &--work {
-    list-style-image: url("../../assets/img/small-tick-green.svg");
-    & > li::before {
-      //space between marker and text
-      content: "";
-      width: 5px;
-      display: inline-block;
-    }
-  }
-
-  &--something {
-    list-style-image: url("../../assets/img/small-tick-light.svg");
-    & > li::before {
-      //space between marker and text
-      content: "";
-      width: 5px;
-      display: inline-block;
-    }
-  }
-
-  &--learn {
-    list-style-type: none;
-    & > li {
-      padding-left: 24px;
-      position: relative;
-      &:before {
-        content: "";
-        width: 2px;
-        height: 2px;
-        background: $blue-lightest;
-        border-radius: 50%;
-        position: absolute;
-        left: 5px;
-        top: 10px;
-      }
-    }
-  }
-
-  &__item {
-    text-align: left;
-    margin: 0px 0px 16px;
-    &:last-of-type {
-      margin-bottom: 0px;
-    }
-  }
-
-  @media screen and (min-width: $breakpoint) {
-    width: 226px;
   }
 }
