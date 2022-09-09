@@ -1,0 +1,117 @@
+@import "./../../variables";
+
+.project {
+  width: 288px;
+  min-height: 320px;
+  border-radius: 16px;
+  margin: 24px 12px 0px;
+
+  background: $console-grey2;
+  filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
+  overflow: hidden;
+
+  color: $console-grey4;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 13px;
+  line-height: 1.85em;
+
+  position: relative;
+
+  & a {
+    color: $text-link;
+  }
+
+  &__bar {
+    height: 40px;
+    width: 100%;
+    background: $console-grey1;
+  }
+
+  &__dot {
+    content: "";
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: $console-grey3;
+    position: absolute;
+    left: 32px;
+    top: 16px;
+
+    &:before {
+      content: "";
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      background: $console-grey3;
+      position: absolute;
+      right: 16px;
+    }
+    &:after {
+      content: "";
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      background: $console-grey3;
+      position: absolute;
+      left: 16px;
+    }
+  }
+
+  &__content {
+    padding: 24px 16px;
+    text-align: left;
+
+    @media screen and (min-width: $breakpoint) {
+      padding: 18px 48px 58px;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 102px 1fr;
+    column-gap: 4px;
+    @media screen and (min-width: $breakpoint) {
+      grid-template-columns: 116px 1fr;
+    }
+  }
+
+  &__label {
+    text-align: right;
+  }
+
+  &__name {
+    margin: 24px 0px 8px;
+
+    font-weight: normal;
+    font-size: inherit;
+    line-height: inherit;
+
+    & span:last-child {
+      color: $white;
+      font-weight: bold;
+    }
+  }
+
+  &__description {
+    margin: 0px 0px 24px;
+    & span:last-child {
+      color: $console-grey5;
+    }
+  }
+
+  &__demo {
+    margin: 0px 0px 8px;
+  }
+
+  &__github {
+    margin: 0px;
+  }
+
+  @media screen and (min-width: $breakpoint) {
+    width: 100%;
+    min-height: 324px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+}
