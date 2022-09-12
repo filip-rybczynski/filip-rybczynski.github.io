@@ -9,6 +9,7 @@ import "./hero.scss";
 
 // Assets
 import portrait from "./../../assets/img/portrait.jpg";
+import { EmailButton } from "../EmailButton/EmailButton";
 
 const Hero = ({
   givenName,
@@ -71,9 +72,7 @@ const Hero = ({
             </a>
           </p>
         </div>
-        <a className="hero__mail" href={"mailto:" + email}>
-          {email}
-        </a>
+        <EmailButton email={email} />
       </section>
       <a className="top-link" href="#top">
         Back to top

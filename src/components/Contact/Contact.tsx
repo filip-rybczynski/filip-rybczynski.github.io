@@ -1,4 +1,5 @@
 import React from "react";
+import { EmailButton } from "../EmailButton/EmailButton";
 
 import "./contact.scss";
 
@@ -18,9 +19,7 @@ function Contact({ socials, email }: ContactProps) {
             <Social {...social} />
           ))}
         </ul>
-        <a className="contact__mail" href="”mailto:filipryba@gmail.com”">
-          {email}
-        </a>
+        <EmailButton email={email} />
       </div>
     </section>
   );

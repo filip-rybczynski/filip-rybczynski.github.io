@@ -122,24 +122,6 @@
       }
     }
   }
-  &__mail {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 48px;
-    width: 278px;
-    border-radius: 24px;
-    margin: auto;
-
-    background-color: $text-link;
-    color: $white;
-
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 2em;
-    text-decoration: none;
-  }
 
   @media screen and (min-width: $breakpoint) {
     padding: 130px 0px 124px;
