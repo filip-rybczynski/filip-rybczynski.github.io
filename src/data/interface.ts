@@ -1,16 +1,16 @@
 interface Socials {
     socialName: string,
     socialUrl: string,
-    socialIconUrl?: string,
+    socialIconUrl: string,
 }
 
 export interface PersonalInfo {
     givenName: string,
     familyName: string,
     email: string,
-    repository: string,
+    githubUsername: string,
     portraitUrl?: string,
-    socials?: Array<Socials>,
+    socials: Array<Socials>,
     role: string,
 }
 

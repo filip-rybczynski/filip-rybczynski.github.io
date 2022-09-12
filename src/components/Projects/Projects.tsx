@@ -5,18 +5,19 @@ import React, { useEffect, useState } from "react";
 import Project from "../Project/Project";
 
 // Interfaces
+import { ProjectsProps } from "./interface";
 import { fetchProjectData } from "./fetchProjectData";
 import { ProjectProps as ProjectData } from "../Project/interface";
 
 // Styles
 import "./projects.scss";
 
-function Projects() {
+function Projects({repoUrl}: ProjectsProps) {
   const [projectDataArray, setProjectDataArray] = useState<ProjectData[]>();
 
   useEffect(() => {
     (async () => {
-      const projectData: ProjectData[] = await fetchProjectData();
+      const projectData: ProjectData[] = await fetchProjectData(repoUrl);
 
       setProjectDataArray(projectData);
     })();

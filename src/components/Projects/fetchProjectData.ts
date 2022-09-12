@@ -1,9 +1,9 @@
 import { RepositoryData } from "./interface";
 import { ProjectProps  as ProjectData } from "../Project/interface"; 
 
-export const fetchProjectData = (): Promise<ProjectData[]> => {
+export const fetchProjectData = (username: string): Promise<ProjectData[]> => {
   return fetch(
-    "https://api.github.com/users/filip-rybczynski/repos?sort=created&direction=asc"
+    `https://api.github.com/users/${username}/repos?sort=created&direction=asc`
   )
     .then((resp) => {
       if (!resp.ok) {

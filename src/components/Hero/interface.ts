@@ -1,3 +1,3 @@
 import { PersonalInfo } from "../../data/interface";
 
-export interface HeroProps extends Omit<PersonalInfo, "socials" | "repository"> {};
+export interface HeroProps extends Omit<PersonalInfo, "socials" | "githubUsername"> {};
