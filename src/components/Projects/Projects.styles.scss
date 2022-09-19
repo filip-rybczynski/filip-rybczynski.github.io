@@ -30,16 +30,6 @@
       }
 
   }
-  &__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    @media screen and (min-width: $breakpoint) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 24px;
-      }
-  }
 
   @media screen and (min-width: $breakpoint) {
     padding: 80px 116px 176px;

@@ -2,15 +2,15 @@
 import React from "react";
 
 // Interface
-import { ProjectProps } from "./interface";
+import { ProjectItemProps } from "./ProjectItem.interface";
 
 // Styles
-import "./project.scss";
+import "./ProjectItem.styles.scss";
 
 // Assets
-import githubIcon from "../../assets/img/github-icon-white.svg";
+import githubIcon from "./assets/github-icon-white.svg";
 
-function Project({ name, description, homepage, html_url }: ProjectProps) {
+export const ProjectItem = ({ name, description, homepage, html_url }: ProjectItemProps) => {
   return (
     <article className="project">
       <div className="project__bar">
@@ -60,5 +60,3 @@ function Project({ name, description, homepage, html_url }: ProjectProps) {
     </article>
   );
 }
-
-export default Project;

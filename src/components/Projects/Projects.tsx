@@ -1,27 +1,17 @@
 // React
-import React, { useEffect, useState } from "react";
+import React, { FunctionComponent } from "react";
 
 // Components
-import Project from "../Project/Project";
+import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
+import { FetchedProjects } from "./components";
 
 // Interfaces
-import { ProjectsProps } from "./interface";
-import { fetchProjectData } from "./fetchProjectData";
-import { ProjectProps as ProjectData } from "../Project/interface";
+import { ProjectsProps } from "./Projects.interface";
 
 // Styles
-import "./projects.scss";
+import "./Projects.styles.scss";
 
-function Projects({repoUrl}: ProjectsProps) {
-  const [projectDataArray, setProjectDataArray] = useState<ProjectData[]>();
-
-  useEffect(() => {
-    (async () => {
-      const projectData: ProjectData[] = await fetchProjectData(repoUrl);
-
-      setProjectDataArray(projectData);
-    })();
-  }, []);
+export const Projects = ({username}: ProjectsProps) => {
 
   return (
     <section className="projects" id="projects">
@@ -30,13 +20,9 @@ function Projects({repoUrl}: ProjectsProps) {
         I started my frontend developer path in 2020. Since then, I've built
         some projects. Here's a list of some of the things I've done so far:
       </p>
-      <div className="projects__container projects--js">
-        {projectDataArray?.map((project) => (
-          <Project key={project.name} {...project} />
-        ))}
-      </div>
+      <ErrorBoundary>
+        <FetchedProjects username={username} />
+      </ErrorBoundary>
     </section>
   );
 }
-
-export default Projects;

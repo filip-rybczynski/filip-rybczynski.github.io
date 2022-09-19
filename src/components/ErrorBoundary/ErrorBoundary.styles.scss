@@ -1,0 +1,18 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+    color: red;
+
+    &__header {
+        font-size: 2em;
+    }
+
+    &__message {
+        margin: 0;
+        
+        font-size: 1.4em;
+    }
+}
