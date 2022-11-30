@@ -26,6 +26,6 @@ export const convertToProjectItemProps = (
     .filter((repo: UnfilteredProjectData): repo is ProjectData => { // type predicate
         // https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates
         // Functions that are declared as type predicate, must return a boolean. When the return value is true, TypeScript assumes that the return type is the one that's declared in the type predicate.
-      return !!repo.homepage && !repo.name.includes(username);
+      return !!repo.homepage;
     });
 };
