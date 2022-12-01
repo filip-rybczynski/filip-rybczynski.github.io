@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.09d1af09.css",
+    "main.js": "/static/js/main.99868853.js",
+    "static/js/787.a2497327.chunk.js": "/static/js/787.a2497327.chunk.js",
+    "static/media/portrait.jpg": "/static/media/portrait.6d81b2464cc2f3364bb1.jpg",
+    "static/media/github-icon-white.svg": "/static/media/github-icon-white.503bd179f5dcea70dd593cb51865d44f.svg",
+    "static/media/left-bracket.svg": "/static/media/left-bracket.e24c2ca0367e048f7937.svg",
+    "static/media/github-icon.svg": "/static/media/github-icon.d527165ba101e33c15b7969f909d7a0b.svg",
+    "static/media/right-bracket.svg": "/static/media/right-bracket.767db10ba92628a71d95.svg",
+    "index.html": "/index.html",
+    "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.fc6685ab8b5fd30edd0e4a0b2488e711.svg",
+    "static/media/small-tick-green.svg": "/static/media/small-tick-green.7747dc29e283777868d3.svg",
+    "static/media/small-tick-light.svg": "/static/media/small-tick-light.a397d03e6022bff3cc0f.svg",
+    "static/media/speech-cloud.svg": "/static/media/speech-cloud.13333786faf7102ace25.svg",
+    "main.09d1af09.css.map": "/static/css/main.09d1af09.css.map",
+    "main.99868853.js.map": "/static/js/main.99868853.js.map",
+    "787.a2497327.chunk.js.map": "/static/js/787.a2497327.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09d1af09.css",
+    "static/js/main.99868853.js"
+  ]
+}
